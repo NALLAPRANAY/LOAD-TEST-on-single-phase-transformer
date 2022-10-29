@@ -1,4 +1,6 @@
-mport RPi.GPIO as GPIO
+/*Desktop/RTL/loadtest.py*/
+
+import RPi.GPIO as GPIO
 import serial
 import time
 import json
