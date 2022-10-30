@@ -2,4 +2,15 @@
 
 [Unit]
 After=multi-user.target
-After=
+After=network.target
+StartLimitIntervelSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/python3 /home/loadtest/Desktop/RTL/loadtest.py
+
+[Install]
+WantedBy=multi-user.target
+
